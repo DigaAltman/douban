@@ -1,0 +1,7 @@
+ <!--星星组件-->
+<view class="rate-group">
+  <image style='width:{{starsize}}rpx;height:{{starsize}}rpx;' wx:for="{{lights}}" src="/img/rate_light.png" wx:key="*this"></image>
+  <image style='width:{{starsize}}rpx;height:{{starsize}}rpx;' wx:for="{{halfs}}" src="/img/rate_half.png" wx:key="*this"></image>
+  <image style='width:{{starsize}}rpx;height:{{starsize}}rpx;' wx:for="{{grays}}" src="/img/rate_gray.png" wx:key="*this"></image>
+  <text wx:if="{{isText}}" style='font-size:{{fontsize}}rpx;color:{{fontcolor}};'>{{rateText}}</text>
+</view>
